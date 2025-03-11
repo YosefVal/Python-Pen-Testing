@@ -5,10 +5,11 @@ import socket
 #Creating socket object
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
+#host = '10.214.30.200'
 host = socket.gethostbyname()
 port = 444
 
-serversocket.bind((host, port))
+serversocket.bind(('10.214.30.200', port))
 
 #Starting TCP Listener
 serversocket.listen(3)
